@@ -1,0 +1,112 @@
+timestamp:28631 event:{set_speed:{speed:1}}
+timestamp:28643 event:{set_network_info:{commit:"main"}}
+timestamp:2226719 event:{set_speed:{}}
+timestamp:3013698 event:{add_node:{node_id:1 x:231 y:769 radio_range:160}}
+timestamp:3017549 event:{on_ext_addr_change:{node_id:1 ext_addr:3327675070918124007}}
+timestamp:3017623 event:{set_node_rloc16:{node_id:1 rloc16:65534}}
+timestamp:3019248 event:{set_node_rloc16:{node_id:1 rloc16:65534}}
+timestamp:3019275 event:{set_node_role:{node_id:1 role:OT_DEVICE_ROLE_DETACHED}}
+timestamp:3460920 event:{add_node:{node_id:2 x:231 y:769 radio_range:160}}
+timestamp:3464903 event:{on_ext_addr_change:{node_id:2 ext_addr:5073869610440404979}}
+timestamp:3464943 event:{set_node_rloc16:{node_id:2 rloc16:65534}}
+timestamp:3466259 event:{set_node_rloc16:{node_id:2 rloc16:65534}}
+timestamp:3466285 event:{set_node_role:{node_id:2 role:OT_DEVICE_ROLE_DETACHED}}
+timestamp:3862946 event:{add_node:{node_id:3 x:238 y:767 radio_range:160}}
+timestamp:3866850 event:{on_ext_addr_change:{node_id:3 ext_addr:4772490261714906348}}
+timestamp:3866887 event:{set_node_rloc16:{node_id:3 rloc16:65534}}
+timestamp:3868354 event:{set_node_rloc16:{node_id:3 rloc16:65534}}
+timestamp:3868371 event:{set_node_role:{node_id:3 role:OT_DEVICE_ROLE_DETACHED}}
+timestamp:4684397 event:{set_node_pos:{node_id:3 x:187 y:657}}
+timestamp:4757801 event:{set_node_pos:{node_id:3 x:184 y:656}}
+timestamp:5833046 event:{set_node_pos:{node_id:2 x:361 y:690}}
+timestamp:6053155 event:{set_node_pos:{node_id:2 x:390 y:675}}
+timestamp:6105120 event:{set_node_pos:{node_id:2 x:398 y:672}}
+timestamp:7216216 event:{set_node_pos:{node_id:3 x:136 y:633}}
+timestamp:7258122 event:{set_node_pos:{node_id:3 x:135 y:633}}
+timestamp:8528535 event:{set_speed:{speed:1}}
+timestamp:8663029 event:{send:{src_id:3 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:238 dst_addr_short:65535}}}
+timestamp:8679334 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:23 dst_addr_short:65535}}}
+timestamp:9028763 event:{send:{src_id:1 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:215 dst_addr_short:65535}}}
+timestamp:9413452 event:{send:{src_id:3 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:239 dst_addr_short:65535}}}
+timestamp:9428736 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:24 dst_addr_short:65535}}}
+timestamp:9528869 event:{advance_time:{ts:1000000 speed:0.9996541196745926}}
+timestamp:9802749 event:{send:{src_id:1 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:216 dst_addr_short:65535}}}
+timestamp:10552097 event:{advance_time:{ts:2000000 speed:0.9998590198781971}}
+timestamp:10708440 event:{set_node_rloc16:{node_id:3 rloc16:36864}}
+timestamp:10709664 event:{set_node_role:{node_id:3 role:OT_DEVICE_ROLE_LEADER}}
+timestamp:10709677 event:{set_node_partition_id:{node_id:3 partition_id:1728704445}}
+timestamp:10709920 event:{send:{src_id:3 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:240 dst_addr_short:65535}}}
+timestamp:10722789 event:{set_node_rloc16:{node_id:2 rloc16:39936}}
+timestamp:10724021 event:{set_node_role:{node_id:2 role:OT_DEVICE_ROLE_LEADER}}
+timestamp:10724046 event:{set_node_partition_id:{node_id:2 partition_id:26554257}}
+timestamp:10724146 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:25 dst_addr_short:65535}}}
+timestamp:11074450 event:{set_node_rloc16:{node_id:1 rloc16:28672}}
+timestamp:11076024 event:{set_node_role:{node_id:1 role:OT_DEVICE_ROLE_LEADER}}
+timestamp:11076047 event:{set_node_partition_id:{node_id:1 partition_id:188330280}}
+timestamp:11076401 event:{send:{src_id:1 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:217 dst_addr_short:65535}}}
+timestamp:11320386 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:26 dst_addr_short:65535}}}
+timestamp:11574284 event:{advance_time:{ts:3000000 speed:0.9997450650084229}}
+timestamp:11726078 event:{send:{src_id:3 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:241 dst_addr_short:65535}}}
+timestamp:12027983 event:{set_speed:{}}
+timestamp:13571437 event:{set_node_pos:{node_id:2 x:347 y:689}}
+timestamp:13787655 event:{set_node_pos:{node_id:2 x:305 y:702}}
+timestamp:13994232 event:{set_node_pos:{node_id:2 x:289 y:713}}
+timestamp:14155607 event:{set_node_pos:{node_id:2 x:288 y:716}}
+timestamp:15466157 event:{set_node_pos:{node_id:3 x:156 y:684}}
+timestamp:15686441 event:{set_node_pos:{node_id:3 x:167 y:694}}
+timestamp:15882412 event:{set_node_pos:{node_id:3 x:188 y:702}}
+timestamp:16096702 event:{set_node_pos:{node_id:3 x:192 y:704}}
+timestamp:16294435 event:{set_node_pos:{node_id:3 x:196 y:706}}
+timestamp:18644433 event:{set_speed:{speed:1}}
+timestamp:18977874 event:{send:{src_id:1 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:218 dst_addr_short:65535}}}
+timestamp:18980222 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:27 dst_addr_short:65535}}}
+timestamp:18986312 event:{send:{src_id:1 dst_id:2 mv_info:{channel:11 frame_control:56417 seq:219 dst_addr_extended:5073869610440404979}}}
+timestamp:19076580 event:{send:{src_id:3 dst_id:2 mv_info:{channel:11 frame_control:56417 seq:242 dst_addr_extended:5073869610440404979}}}
+timestamp:19484674 event:{advance_time:{ts:4000000 speed:0.9997096081614388}}
+timestamp:19749340 event:{send:{src_id:2 dst_id:3 mv_info:{channel:11 frame_control:56417 seq:28 dst_addr_extended:4772490261714906348}}}
+timestamp:19749941 event:{add_child_table:{node_id:3 ext_addr:5073869610440404979}}
+timestamp:19750802 event:{send:{src_id:3 dst_id:2 mv_info:{channel:11 frame_control:56417 seq:243 dst_addr_extended:5073869610440404979}}}
+timestamp:19751075 event:{set_node_rloc16:{node_id:2 rloc16:36865}}
+timestamp:19751730 event:{set_node_role:{node_id:2 role:OT_DEVICE_ROLE_CHILD}}
+timestamp:19751742 event:{set_node_partition_id:{node_id:2 partition_id:1728704445}}
+timestamp:19797020 event:{send:{src_id:2 dst_id:3 mv_info:{channel:11 frame_control:39017 seq:29 dst_addr_short:36864}}}
+timestamp:19797894 event:{send:{src_id:3 dst_id:2 mv_info:{channel:11 frame_control:39017 seq:244 dst_addr_short:36865}}}
+timestamp:19798166 event:{set_node_rloc16:{node_id:2 rloc16:39936}}
+timestamp:19798602 event:{set_node_role:{node_id:2 role:OT_DEVICE_ROLE_ROUTER}}
+timestamp:20506622 event:{advance_time:{ts:5000000 speed:0.998904202090307}}
+timestamp:20692430 event:{send:{src_id:3 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:245 dst_addr_short:65535}}}
+timestamp:20693524 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:30 dst_addr_short:65535}}}
+timestamp:20693867 event:{send:{src_id:1 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:220 dst_addr_short:65535}}}
+timestamp:20744877 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:31 dst_addr_short:65535}}}
+timestamp:20745054 event:{remove_child_table:{node_id:3 ext_addr:5073869610440404979}}
+timestamp:20852266 event:{send:{src_id:3 dst_id:1 mv_info:{channel:11 frame_control:56417 seq:246 dst_addr_extended:3327675070918124007}}}
+timestamp:21220501 event:{send:{src_id:3 dst_id:2 mv_info:{channel:11 frame_control:56417 seq:247 dst_addr_extended:5073869610440404979}}}
+timestamp:21220737 event:{add_router_table:{node_id:2 ext_addr:4772490261714906348}}
+timestamp:21221491 event:{send:{src_id:2 dst_id:3 mv_info:{channel:11 frame_control:56417 seq:32 dst_addr_extended:4772490261714906348}}}
+timestamp:21221705 event:{add_router_table:{node_id:3 ext_addr:5073869610440404979}}
+timestamp:21443682 event:{send:{src_id:1 dst_id:3 mv_info:{channel:11 frame_control:56417 seq:221 dst_addr_extended:4772490261714906348}}}
+timestamp:21444360 event:{add_child_table:{node_id:3 ext_addr:3327675070918124007}}
+timestamp:21444845 event:{send:{src_id:3 dst_id:1 mv_info:{channel:11 frame_control:56417 seq:248 dst_addr_extended:3327675070918124007}}}
+timestamp:21445018 event:{set_node_rloc16:{node_id:1 rloc16:36866}}
+timestamp:21445599 event:{set_node_role:{node_id:1 role:OT_DEVICE_ROLE_CHILD}}
+timestamp:21445611 event:{set_node_partition_id:{node_id:1 partition_id:1728704445}}
+timestamp:21489557 event:{send:{src_id:1 dst_id:3 mv_info:{channel:11 frame_control:39017 seq:222 dst_addr_short:36864}}}
+timestamp:21490676 event:{send:{src_id:3 dst_id:1 mv_info:{channel:11 frame_control:39017 seq:249 dst_addr_short:36866}}}
+timestamp:21490927 event:{set_node_rloc16:{node_id:1 rloc16:28672}}
+timestamp:21491399 event:{set_node_role:{node_id:1 role:OT_DEVICE_ROLE_ROUTER}}
+timestamp:21530601 event:{advance_time:{ts:6000000 speed:0.9993584118995604}}
+timestamp:21903481 event:{send:{src_id:3 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:250 dst_addr_short:65535}}}
+timestamp:21904100 event:{send:{src_id:1 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:223 dst_addr_short:65535}}}
+timestamp:22154852 event:{send:{src_id:2 dst_id:1 mv_info:{channel:11 frame_control:56417 seq:33 dst_addr_extended:3327675070918124007}}}
+timestamp:22155101 event:{add_router_table:{node_id:1 ext_addr:5073869610440404979}}
+timestamp:22157016 event:{send:{src_id:1 dst_id:2 mv_info:{channel:11 frame_control:56417 seq:224 dst_addr_extended:5073869610440404979}}}
+timestamp:22157404 event:{add_router_table:{node_id:2 ext_addr:3327675070918124007}}
+timestamp:22159261 event:{send:{src_id:3 dst_id:1 mv_info:{channel:11 frame_control:56417 seq:251 dst_addr_extended:3327675070918124007}}}
+timestamp:22159493 event:{add_router_table:{node_id:1 ext_addr:4772490261714906348}}
+timestamp:22160614 event:{send:{src_id:1 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:225 dst_addr_short:65535}}}
+timestamp:22160730 event:{remove_child_table:{node_id:3 ext_addr:3327675070918124007}}
+timestamp:22161856 event:{send:{src_id:1 dst_id:3 mv_info:{channel:11 frame_control:56417 seq:226 dst_addr_extended:4772490261714906348}}}
+timestamp:22161967 event:{add_router_table:{node_id:3 ext_addr:3327675070918124007}}
+timestamp:22221766 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:34 dst_addr_short:65535}}}
+timestamp:22552839 event:{advance_time:{ts:7000000 speed:0.9997670542763536}}
+timestamp:23541250 event:{set_speed:{}}

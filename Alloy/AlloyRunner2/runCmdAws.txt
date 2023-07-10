@@ -1,0 +1,1 @@
+java -Dfile.encoding=UTF-8 -classpath /home/ec2-user/MyThesis/Alloy/AlloyRunner2/out/production/AlloyRunner2:/home/ec2-user/MyThesis/Alloy/AlloyRunner2/dist/lib/org.alloytools.alloy.dist.jar edu.mit.csail.sdg.alloy4whole.ExampleUsingTheCompiler

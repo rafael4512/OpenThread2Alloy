@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<alloy>
+
+<view nodetheme="Martha">
+
+<defaultnode/>
+
+<defaultedge/>
+
+<node>
+   <type name="ED"/>
+   <type name="FTD"/>
+   <type name="Int"/>
+   <type name="Leader"/>
+   <type name="MTD"/>
+   <type name="Node"/>
+   <type name="REED"/>
+   <type name="Router"/>
+   <type name="String"/>
+   <type name="Type"/>
+   <type name="univ"/>
+   <type name="seq/Int"/>
+   <set name="$addNode_n&apos;&apos;" type="Node"/>
+   <set name="$change_to_leader_p" type="Partition"/>
+   <set name="$n1" type="FTD"/>
+   <set name="$n2" type="FTD"/>
+   <set name="$n3" type="FTD"/>
+   <set name="$send_ChildResponse_msg_from&apos;" type="Node"/>
+</node>
+
+<node hideunconnected="yes">
+   <type name="Role"/>
+</node>
+
+<node hideunconnected="yes" shape="Ellipse" color="Gray">
+   <type name="Partition"/>
+</node>
+
+<node showlabel="no">
+   <set name="$addNode_n" type="Node"/>
+   <set name="$addNode_n&apos;" type="Node"/>
+   <set name="$change_to_router_msg_from" type="Node"/>
+   <set name="$send_ChildResponse_msg_from" type="Node"/>
+</node>
+
+<node showlabel="no" shape="Ellipse" color="Blue">
+   <set name="$reed" type="Node"/>
+</node>
+
+<node showlabel="no" style="Bold" shape="House" color="Blue">
+   <set name="$th_leader" type="Node"/>
+</node>
+
+<node showlabel="no" style="Solid" shape="House" color="Blue">
+   <set name="$router" type="Node"/>
+</node>
+
+<node visible="no">
+   <type name="Adv"/>
+   <type name="Creq"/>
+   <type name="Cresp"/>
+   <type name="LAreq"/>
+   <type name="LAresp"/>
+   <type name="Lreq"/>
+   <type name="Lresp"/>
+   <type name="None"/>
+   <type name="Preq"/>
+   <type name="Presp"/>
+</node>
+
+<edge style="inherit" visible="no" attribute="yes">
+   <relation name="role"> <type name="Node"/> <type name="Role"/> </relation>
+</edge>
+
+<edge visible="no">
+   <relation name="$elems"> <type name="Partition"/> <type name="Node"/> </relation>
+   <relation name="leader"> <type name="Partition"/> <type name="Node"/> </relation>
+</edge>
+
+<edge visible="no" attribute="yes" label=" ">
+   <relation name="partition_id"> <type name="Node"/> <type name="Partition"/> </relation>
+</edge>
+
+</view>
+
+</alloy>

@@ -1,0 +1,260 @@
+timestamp:27422 event:{set_speed:{speed:1}}
+timestamp:27435 event:{set_network_info:{commit:"main"}}
+timestamp:2234572 event:{set_speed:{}}
+timestamp:20269033 event:{set_speed:{speed:1}}
+timestamp:20918034 event:{add_node:{node_id:1 x:239 y:776 radio_range:160}}
+timestamp:20929849 event:{on_ext_addr_change:{node_id:1 ext_addr:12551224223649203135}}
+timestamp:20929935 event:{set_node_rloc16:{node_id:1 rloc16:65534}}
+timestamp:20931977 event:{set_node_rloc16:{node_id:1 rloc16:65534}}
+timestamp:20932010 event:{set_node_role:{node_id:1 role:OT_DEVICE_ROLE_DETACHED}}
+timestamp:21198949 event:{send:{src_id:1 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:230 dst_addr_short:65535}}}
+timestamp:21933472 event:{advance_time:{ts:1000000 speed:0.9998770151271393}}
+timestamp:21971406 event:{send:{src_id:1 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:231 dst_addr_short:65535}}}
+timestamp:22259368 event:{add_node:{node_id:2 x:239 y:774 radio_range:160}}
+timestamp:22263169 event:{on_ext_addr_change:{node_id:2 ext_addr:2459581611908079254}}
+timestamp:22263203 event:{set_node_rloc16:{node_id:2 rloc16:65534}}
+timestamp:22264794 event:{set_node_rloc16:{node_id:2 rloc16:65534}}
+timestamp:22264820 event:{set_node_role:{node_id:2 role:OT_DEVICE_ROLE_DETACHED}}
+timestamp:22610885 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:69 dst_addr_short:65535}}}
+timestamp:22956676 event:{advance_time:{ts:2000000 speed:0.999000000999}}
+timestamp:23244458 event:{set_node_rloc16:{node_id:1 rloc16:27648}}
+timestamp:23246283 event:{set_node_role:{node_id:1 role:OT_DEVICE_ROLE_LEADER}}
+timestamp:23246411 event:{set_node_partition_id:{node_id:1 partition_id:1347704705}}
+timestamp:23246832 event:{send:{src_id:1 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:232 dst_addr_short:65535}}}
+timestamp:23385111 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:70 dst_addr_short:65535}}}
+timestamp:23501440 event:{send:{src_id:1 dst_id:2 mv_info:{channel:11 frame_control:56417 seq:233 dst_addr_extended:2459581611908079254}}}
+timestamp:23898141 event:{set_node_pos:{node_id:2 x:203 y:774}}
+timestamp:23980055 event:{advance_time:{ts:3000000 speed:0.9996291375899541}}
+timestamp:24012236 event:{set_node_pos:{node_id:2 x:189 y:772}}
+timestamp:24253626 event:{send:{src_id:1 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:234 dst_addr_short:65535}}}
+timestamp:24657600 event:{send:{src_id:2 dst_id:1 mv_info:{channel:11 frame_control:56417 seq:71 dst_addr_extended:12551224223649203135}}}
+timestamp:24658387 event:{add_child_table:{node_id:1 ext_addr:2459581611908079254}}
+timestamp:24658946 event:{send:{src_id:1 dst_id:2 mv_info:{channel:11 frame_control:56441 seq:235 dst_addr_extended:2459581611908079254}}}
+timestamp:24659529 event:{send:{src_id:1 dst_id:2 mv_info:{channel:11 frame_control:56425 seq:236 dst_addr_extended:2459581611908079254}}}
+timestamp:24660872 event:{set_node_rloc16:{node_id:2 rloc16:27649}}
+timestamp:24661467 event:{set_node_role:{node_id:2 role:OT_DEVICE_ROLE_CHILD}}
+timestamp:24661499 event:{set_node_partition_id:{node_id:2 partition_id:1347704705}}
+timestamp:24956309 event:{send:{src_id:2 dst_id:1 mv_info:{channel:11 frame_control:39017 seq:72 dst_addr_short:27648}}}
+timestamp:24957097 event:{send:{src_id:1 dst_id:2 mv_info:{channel:11 frame_control:39017 seq:237 dst_addr_short:27649}}}
+timestamp:24957385 event:{set_node_rloc16:{node_id:2 rloc16:54272}}
+timestamp:24958043 event:{set_node_role:{node_id:2 role:OT_DEVICE_ROLE_ROUTER}}
+timestamp:25002002 event:{advance_time:{ts:4000000 speed:0.9999110079202951}}
+timestamp:25507259 event:{send:{src_id:1 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:238 dst_addr_short:65535}}}
+timestamp:25507978 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:73 dst_addr_short:65535}}}
+timestamp:25655818 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:74 dst_addr_short:65535}}}
+timestamp:25656104 event:{remove_child_table:{node_id:1 ext_addr:2459581611908079254}}
+timestamp:26024060 event:{advance_time:{ts:5000000 speed:0.9999100080992711}}
+timestamp:26497082 event:{send:{src_id:1 dst_id:2 mv_info:{channel:11 frame_control:56417 seq:239 dst_addr_extended:2459581611908079254}}}
+timestamp:26497275 event:{add_router_table:{node_id:2 ext_addr:12551224223649203135}}
+timestamp:26499176 event:{send:{src_id:2 dst_id:1 mv_info:{channel:11 frame_control:56417 seq:75 dst_addr_extended:12551224223649203135}}}
+timestamp:26499452 event:{add_router_table:{node_id:1 ext_addr:2459581611908079254}}
+timestamp:27047861 event:{advance_time:{ts:6000000 speed:0.9991786751290439}}
+timestamp:27111852 event:{send:{src_id:1 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:240 dst_addr_short:65535}}}
+timestamp:27322250 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:76 dst_addr_short:65535}}}
+timestamp:28070907 event:{advance_time:{ts:7000000 speed:0.9990269477528887}}
+timestamp:29093895 event:{advance_time:{ts:8000000 speed:0.999000999000999}}
+timestamp:29341010 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:77 dst_addr_short:65535}}}
+timestamp:29361838 event:{send:{src_id:1 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:241 dst_addr_short:65535}}}
+timestamp:30094297 event:{advance_time:{ts:9000000 speed:0.9998860129945186}}
+timestamp:31116469 event:{advance_time:{ts:10000000 speed:0.9998090364740334}}
+timestamp:31448291 event:{on_node_fail:{node_id:1}}
+timestamp:32117036 event:{advance_time:{ts:11000000 speed:0.9997750506136119}}
+timestamp:33117376 event:{advance_time:{ts:12000000 speed:0.9998520219007587}}
+timestamp:33227710 event:{set_speed:{speed:2}}
+timestamp:33296257 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:78 dst_addr_short:65535}}}
+timestamp:33728281 event:{advance_time:{ts:13000000 speed:1.9977106236253255}}
+timestamp:34250439 event:{advance_time:{ts:14000000 speed:1.9992442856600205}}
+timestamp:34750774 event:{advance_time:{ts:15000000 speed:1.9995481021289188}}
+timestamp:35251455 event:{advance_time:{ts:16000000 speed:1.9980339346083453}}
+timestamp:35773768 event:{advance_time:{ts:17000000 speed:1.9991044012282497}}
+timestamp:35997072 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:79 dst_addr_short:65535}}}
+timestamp:36274897 event:{advance_time:{ts:18000000 speed:1.9966615818351716}}
+timestamp:36797458 event:{advance_time:{ts:19000000 speed:1.9984292346215875}}
+timestamp:37319916 event:{advance_time:{ts:20000000 speed:1.9984571910485105}}
+timestamp:37820811 event:{advance_time:{ts:21000000 speed:1.9976747066414693}}
+timestamp:38321856 event:{advance_time:{ts:22000000 speed:1.9969287236230677}}
+timestamp:38823274 event:{advance_time:{ts:23000000 speed:1.996155404690566}}
+timestamp:39345992 event:{advance_time:{ts:24000000 speed:1.9985370708641275}}
+timestamp:39846494 event:{advance_time:{ts:25000000 speed:1.998976524019702}}
+timestamp:40347580 event:{advance_time:{ts:26000000 speed:1.9971081873447247}}
+timestamp:40848105 event:{advance_time:{ts:27000000 speed:1.9985490533872408}}
+timestamp:41348741 event:{advance_time:{ts:28000000 speed:1.9981656839021777}}
+timestamp:41410404 event:{set_speed:{speed:4}}
+timestamp:41660638 event:{advance_time:{ts:29000000 speed:3.996275471260785}}
+timestamp:41910991 event:{advance_time:{ts:30000000 speed:3.9975854583831367}}
+timestamp:41970656 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:80 dst_addr_short:65535}}}
+timestamp:42161872 event:{advance_time:{ts:31000000 speed:3.9889903865331684}}
+timestamp:42435123 event:{advance_time:{ts:32000000 speed:3.9966747665941935}}
+timestamp:42706744 event:{advance_time:{ts:33000000 speed:3.9974416373520945}}
+timestamp:42979469 event:{advance_time:{ts:34000000 speed:3.991984095935362}}
+timestamp:43252362 event:{advance_time:{ts:35000000 speed:3.992653517527749}}
+timestamp:43502912 event:{advance_time:{ts:36000000 speed:3.994407829039345}}
+timestamp:43775124 event:{advance_time:{ts:37000000 speed:3.9965150388860913}}
+timestamp:44025671 event:{advance_time:{ts:38000000 speed:3.994726960412256}}
+timestamp:44298001 event:{advance_time:{ts:39000000 speed:3.9957804558386343}}
+timestamp:44548308 event:{advance_time:{ts:40000000 speed:3.99705816519042}}
+timestamp:44798818 event:{advance_time:{ts:41000000 speed:3.995668695134474}}
+timestamp:45049563 event:{advance_time:{ts:42000000 speed:3.992063777210905}}
+timestamp:45322275 event:{advance_time:{ts:43000000 speed:3.9934666884976178}}
+timestamp:45595484 event:{advance_time:{ts:44000000 speed:3.9934028984118237}}
+timestamp:45845906 event:{advance_time:{ts:45000000 speed:3.9985924954416046}}
+timestamp:46096316 event:{advance_time:{ts:46000000 speed:3.9958283551971743}}
+timestamp:46169998 event:{delete_node:{node_id:1}}
+timestamp:46346636 event:{advance_time:{ts:47000000 speed:3.997761253697929}}
+timestamp:46619416 event:{advance_time:{ts:48000000 speed:3.994120654396728}}
+timestamp:46870087 event:{advance_time:{ts:49000000 speed:3.9916176030336294}}
+timestamp:47142726 event:{advance_time:{ts:50000000 speed:3.9972978266691714}}
+timestamp:47393040 event:{advance_time:{ts:51000000 speed:3.99790509772879}}
+timestamp:47643594 event:{advance_time:{ts:52000000 speed:3.994615258631365}}
+timestamp:47894216 event:{advance_time:{ts:53000000 speed:3.9923665950702256}}
+timestamp:48166607 event:{advance_time:{ts:54000000 speed:3.997345762413757}}
+timestamp:48440043 event:{advance_time:{ts:55000000 speed:3.9915857372658436}}
+timestamp:48690390 event:{advance_time:{ts:56000000 speed:3.9988003598920323}}
+timestamp:48940713 event:{advance_time:{ts:57000000 speed:3.9973617412507747}}
+timestamp:49191525 event:{advance_time:{ts:58000000 speed:3.9896588043790495}}
+timestamp:49442268 event:{advance_time:{ts:59000000 speed:3.9912511774190973}}
+timestamp:49714710 event:{advance_time:{ts:60000000 speed:3.996770609347647}}
+timestamp:49965541 event:{advance_time:{ts:61000000 speed:3.9894041425972615}}
+timestamp:50215931 event:{advance_time:{ts:62000000 speed:3.9968824317032716}}
+timestamp:50466518 event:{advance_time:{ts:63000000 speed:3.9943280541630886}}
+timestamp:50716827 event:{advance_time:{ts:64000000 speed:3.998304718799229}}
+timestamp:50844465 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:81 dst_addr_short:65535}}}
+timestamp:50967215 event:{advance_time:{ts:65000000 speed:3.9967546352361882}}
+timestamp:51240280 event:{advance_time:{ts:66000000 speed:3.9903433690469066}}
+timestamp:51490582 event:{advance_time:{ts:67000000 speed:3.9978092005580943}}
+timestamp:51741376 event:{advance_time:{ts:68000000 speed:3.9899771773305455}}
+timestamp:51992257 event:{advance_time:{ts:69000000 speed:3.988751720149179}}
+timestamp:52243064 event:{advance_time:{ts:70000000 speed:3.990200068631441}}
+timestamp:52493813 event:{advance_time:{ts:71000000 speed:3.991235247396717}}
+timestamp:52744331 event:{advance_time:{ts:72000000 speed:3.9944397398820843}}
+timestamp:53016908 event:{advance_time:{ts:73000000 speed:3.998240774059414}}
+timestamp:53267153 event:{advance_time:{ts:74000000 speed:3.998736399297822}}
+timestamp:53517781 event:{advance_time:{ts:75000000 speed:3.9930520893645056}}
+timestamp:53768449 event:{advance_time:{ts:76000000 speed:3.9915379395681154}}
+timestamp:54018980 event:{advance_time:{ts:77000000 speed:3.9935145323993835}}
+timestamp:54145765 event:{set_speed:{speed:8}}
+timestamp:54271372 event:{advance_time:{ts:78000000 speed:7.961466502129692}}
+timestamp:54397315 event:{advance_time:{ts:79000000 speed:7.962734402993988}}
+timestamp:54522625 event:{advance_time:{ts:80000000 speed:7.9885603815336435}}
+timestamp:54648060 event:{advance_time:{ts:81000000 speed:7.990347660026687}}
+timestamp:54773896 event:{advance_time:{ts:82000000 speed:7.95874188208328}}
+timestamp:54899864 event:{advance_time:{ts:83000000 speed:7.955133049600255}}
+timestamp:55054166 event:{advance_time:{ts:84000000 speed:7.976389885937625}}
+timestamp:55179612 event:{advance_time:{ts:85000000 speed:7.987603239771874}}
+timestamp:55304944 event:{advance_time:{ts:86000000 speed:7.991816380026853}}
+timestamp:55453006 event:{advance_time:{ts:87000000 speed:7.975753708725475}}
+timestamp:55579084 event:{advance_time:{ts:88000000 speed:7.94830422929268}}
+timestamp:55704868 event:{advance_time:{ts:89000000 speed:7.961529887583198}}
+timestamp:55830231 event:{advance_time:{ts:90000000 speed:7.989517752708447}}
+timestamp:55956051 event:{advance_time:{ts:91000000 speed:7.956652159037564}}
+timestamp:56034858 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:82 dst_addr_short:65535}}}
+timestamp:56082118 event:{advance_time:{ts:92000000 speed:7.952349521666176}}
+timestamp:56229070 event:{advance_time:{ts:93000000 speed:7.954879921087591}}
+timestamp:56355010 event:{advance_time:{ts:94000000 speed:7.952159806603474}}
+timestamp:56480922 event:{advance_time:{ts:95000000 speed:7.958298515777327}}
+timestamp:56606239 event:{advance_time:{ts:96000000 speed:7.987156652103418}}
+timestamp:56731840 event:{advance_time:{ts:97000000 speed:7.979890675497746}}
+timestamp:56877393 event:{advance_time:{ts:98000000 speed:7.985689644157669}}
+timestamp:57024782 event:{advance_time:{ts:99000000 speed:7.995522507395858}}
+timestamp:57150045 event:{advance_time:{ts:100000000 speed:7.993477322504836}}
+timestamp:57275334 event:{advance_time:{ts:101000000 speed:7.990411506192569}}
+timestamp:57400650 event:{advance_time:{ts:102000000 speed:7.990028444501262}}
+timestamp:57526608 event:{advance_time:{ts:103000000 speed:7.948051535166154}}
+timestamp:57651918 event:{advance_time:{ts:104000000 speed:7.9934134273358755}}
+timestamp:57777878 event:{advance_time:{ts:105000000 speed:7.94912559618442}}
+timestamp:57903920 event:{advance_time:{ts:106000000 speed:7.944452388896833}}
+timestamp:58029346 event:{advance_time:{ts:107000000 speed:7.989390089960533}}
+timestamp:58154882 event:{advance_time:{ts:108000000 speed:7.979126604801839}}
+timestamp:58275695 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58276955 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58279203 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58280259 event:{advance_time:{ts:109000000 speed:7.992646764976222}}
+timestamp:58303926 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58305924 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58308272 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58310700 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58313219 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58316616 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58319083 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58322311 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58324926 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58327377 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58329625 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58332159 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58334888 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:83 dst_addr_extended:12551224223649203135}}}
+timestamp:58422707 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58423915 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58426218 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58427451 event:{advance_time:{ts:110000000 speed:7.990539201585323}}
+timestamp:58451249 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58453914 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58456079 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58458975 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58462391 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58464963 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58468072 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58470769 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58473435 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58476525 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58478960 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58482074 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58485375 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:84 dst_addr_extended:12551224223649203135}}}
+timestamp:58570290 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58572294 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58574264 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58575484 event:{advance_time:{ts:111000000 speed:7.986901481570225}}
+timestamp:58598348 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58600638 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58602908 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58605505 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58608634 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58611228 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58613643 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58616560 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58619402 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58622188 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58624603 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58626992 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58629330 event:{send:{src_id:2 mv_info:{channel:11 frame_control:56417 seq:85 dst_addr_extended:12551224223649203135}}}
+timestamp:58717222 event:{remove_router_table:{node_id:2 ext_addr:12551224223649203135}}
+timestamp:58722799 event:{advance_time:{ts:112000000 speed:7.959882193743533}}
+timestamp:58836518 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:86 dst_addr_short:65535}}}
+timestamp:58870469 event:{advance_time:{ts:113000000 speed:7.949062408088966}}
+timestamp:58944953 event:{set_speed:{}}
+timestamp:59668271 event:{set_speed:{speed:8}}
+timestamp:59793505 event:{advance_time:{ts:114000000 speed:7.985051982688407}}
+timestamp:59886269 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:87 dst_addr_short:65535}}}
+timestamp:59940722 event:{advance_time:{ts:115000000 speed:7.985307035055498}}
+timestamp:60087870 event:{advance_time:{ts:116000000 speed:7.983840706410226}}
+timestamp:60212878 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:88 dst_addr_short:65535}}}
+timestamp:60213203 event:{advance_time:{ts:117000000 speed:7.997248946362451}}
+timestamp:60360338 event:{advance_time:{ts:118000000 speed:7.982438635002993}}
+timestamp:60485756 event:{advance_time:{ts:119000000 speed:7.985944737262418}}
+timestamp:60611221 event:{advance_time:{ts:120000000 speed:7.989517752708447}}
+timestamp:60737102 event:{advance_time:{ts:121000000 speed:7.954626808683271}}
+timestamp:60862435 event:{advance_time:{ts:122000000 speed:7.990666901059562}}
+timestamp:60988280 event:{advance_time:{ts:123000000 speed:7.957285292549594}}
+timestamp:61110484 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:89 dst_addr_short:65535}}}
+timestamp:61113804 event:{advance_time:{ts:124000000 speed:7.987284243484373}}
+timestamp:61260524 event:{advance_time:{ts:125000000 speed:7.971176226764022}}
+timestamp:61289385 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:90 dst_addr_short:65535}}}
+timestamp:61385855 event:{advance_time:{ts:126000000 speed:7.993157856874515}}
+timestamp:61466945 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:91 dst_addr_short:65535}}}
+timestamp:61533031 event:{advance_time:{ts:127000000 speed:7.9909861676029434}}
+timestamp:61645781 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:92 dst_addr_short:65535}}}
+timestamp:61680811 event:{advance_time:{ts:128000000 speed:7.959438700382849}}
+timestamp:61824036 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:93 dst_addr_short:65535}}}
+timestamp:61827781 event:{advance_time:{ts:129000000 speed:7.974481658692185}}
+timestamp:61941117 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:94 dst_addr_short:65535}}}
+timestamp:61975030 event:{advance_time:{ts:130000000 speed:7.982820969274122}}
+timestamp:62118267 event:{set_node_rloc16:{node_id:2 rloc16:54272}}
+timestamp:62118725 event:{set_node_role:{node_id:2 role:OT_DEVICE_ROLE_LEADER}}
+timestamp:62118749 event:{set_node_partition_id:{node_id:2 partition_id:1966010511}}
+timestamp:62119045 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:95 dst_addr_short:65535}}}
+timestamp:62122475 event:{advance_time:{ts:131000000 speed:7.967937021425783}}
+timestamp:62261899 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:96 dst_addr_short:65535}}}
+timestamp:62269993 event:{advance_time:{ts:132000000 speed:7.987730845421432}}
+timestamp:62417188 event:{advance_time:{ts:133000000 speed:7.9657790133586115}}
+timestamp:62421750 event:{send:{src_id:2 dst_id:-1 mv_info:{channel:11 frame_control:55361 seq:97 dst_addr_short:65535}}}
+timestamp:62542814 event:{advance_time:{ts:134000000 speed:7.968635450865394}}
+timestamp:62679859 event:{set_speed:{}}
