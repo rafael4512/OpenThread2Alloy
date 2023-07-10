@@ -13,10 +13,10 @@ ____
 Thus, in this repository you can find the Alloy models, a java program capable of running all the tests presented in the dissertation and also a parser capable of translating any simulation performed in OTNS to an instance of Alloy.
 
 ### Shorcuts:
-- 📂 Alloy Models - All models produced in Alloy can be found here.
-- 📂 Tester -  All the tests performed in the dissertation can be produced again through this java program.
-- 📂 Parser - The Parser can be found here.
+- 📂 [Alloy Models](Alloy/Models) - All models produced in Alloy can be found here.
+- 📂 [Tester](Alloy/AlloyRunner2) -  All the tests performed in the dissertation can be produced again through this java program.
+- 📂 [Parser](Parser) - The Parser can be found here.
 
 ____
 
-#### For more information, read the dissertation here.
+#### For more information, read the dissertation here. The dissertation was written in Portuguese.
