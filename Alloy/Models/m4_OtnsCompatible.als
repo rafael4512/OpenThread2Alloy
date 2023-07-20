@@ -14,19 +14,22 @@ abstract var sig Node{
 	var role : one Role,
 	--                  type of msg -> Content -> from
 	var inbox :  Type -> (Partition +None) -> Node,
-	var partition_id:set Partition, 
-	var in_range:set Node
+	var partition_id:set Partition,
+	var in_range:set Node 
 
 }
 var sig FTD extends Node{
 	//var childs: set Node, 
 	//var connected_ds:set Router, --do a check to see if they form a connected Domain set
-	//routing_table: Node(next_hop) -> Node (destination)	
+	//routing_table: Node( next_hop) -> Node (dest)	
 }
 
 var sig MTD extends Node{ 
 	//var parent: lone Node,
 }
+
+
+
 
 //Network
 sig Partition{
@@ -36,6 +39,7 @@ sig Partition{
 fun elems:Partition ->Node{
  	~ partition_id
 }
+
 
 abstract sig Type {
 }
@@ -57,6 +61,10 @@ fact Init
 	no in_range
 }
 
+
+
+
+
 fact Common_configuration
 {
 	always {
@@ -65,7 +73,7 @@ fact Common_configuration
 	}
 }
 
- 
+
 /*************************************
  *                 Transitions                *
  *************************************/
@@ -78,11 +86,11 @@ pred Nop{
 	Node'=Node
 	in_range'=in_range
 }
-
 /**1º process -  4 messages exchange**/
 
 //Multicast 
 pred send_ParentRequest[n :Node] {
+	--Send a message to all nodes in range
 	
 	inbox'= inbox + (n.in_range-> Preq ->None->n) 
 	
@@ -95,7 +103,6 @@ pred send_ParentRequest[n :Node] {
 
 // 2- Response from router to child applicant. (Unicast)
 pred send_ParentResponse [n :FTD] {
-	//PC
 	--The FTD is already in a partition
 	some n.partition_id
 		
@@ -110,9 +117,10 @@ pred send_ParentResponse [n :FTD] {
 	Node'=Node
 }
 
+
 //3- Send request to a specific father 
 pred send_ChildRequest [n :Node] {
-	//PC There is a Presp in the inbox
+	//PC There is a Presp in the inbox 
 	
 	some  msg_from:(None.(Presp.(n.inbox)))   {
 		inbox'= inbox + (msg_from ->Creq ->None->n) -  (n -> Presp -> None->msg_from)	
@@ -128,6 +136,8 @@ pred send_ChildRequest [n :Node] {
 
 // 4- The father accepts the son
 pred send_ChildResponse [n :FTD] {
+	
+	--PC There is a Creq in the inbox. 
 	one n.partition_id
 
 	some  msg_from: (None.(Creq.(n.inbox))) {
@@ -145,11 +155,9 @@ pred send_ChildResponse [n :FTD] {
 ----------
 
 pred change_to_leader[n:FTD]{
-	--PC	 Ainda não tem partição 
-	--n.role != Leader 
 	no n.partition_id
 	
-	role '= role - (n->n.role) + (n->Leader)--passa a leader
+	role '= role - (n->n.role) + (n->Leader)--becomes leader
 
 	some p:Partition{
 		no p.elems
@@ -172,8 +180,9 @@ pred reset[n:Node]{
 		nd.role'=nd.role
 	}
 	leader'= leader - (n.partition_id->n)
-	in_range'= in_range --it can be changed.
+	in_range'= in_range -- it can be changed.
 	Node'=Node
+
 }
 
 
@@ -210,17 +219,14 @@ pred send_Advertisement[n:FTD]{
 	Node'=Node
 }
 
-
-
 /*
 	Rules to merge:
-		1.Se uma partição apenas tiver 1 elemento, esta cede e junta-se
-		2. Weight Value maior  
-		3. Partition ID Maior 
+		1.If a partition has only 1 element, it gives way and joins.
+		2. Higher Weight Value   
+		3. Higher Partition ID  
 
 */
 
---Para dar merge tem de ter um Advertisement na inbox
 pred merge_partitions[n:FTD]{
 	--PC Is there any partition in my range other than my own.
 		//To merge you must have an Advertisement in the inbox
@@ -242,6 +248,7 @@ pred remove_elemPartition[old_parts:one Partition,node:set Node,newPart:one Part
 	partition_id'=partition_id -(node->old_parts) + (node->newPart)
 }
 
+
 /** 2º process - 3 or 2 messages exchange**/
 /*   Link Establishment Process Between Routers		
 
@@ -251,6 +258,8 @@ pred remove_elemPartition[old_parts:one Partition,node:set Node,newPart:one Part
 		- When a Router receives a message from a neighboring device for which it does not
 		   33 have a stored frame counter.
 */
+
+
 
 
 /**Multicast process**/
@@ -300,6 +309,7 @@ pred send_LinkAcceptResp[n:FTD]{
 }
 
 
+
 /**Unicast process**/ 
 
 // Sent to a router
@@ -327,7 +337,6 @@ pred send_LinkResp[src:FTD,dest:FTD]{
 	Node'=Node
 }
 
-
 //Add a node in the network (Always equals)
 pred addNode{
 	
@@ -343,27 +352,24 @@ pred addNode{
 	leader'=leader
 	
 }
+
 //Add a node in the network  (changes depending on Node and neibours of this node)
 pred addNode[n:Node, new_neighbors:set Node]{
 	addNode
-	Node'=Node + n
-	n.in_range'=new_neighbors
+	in_range'=in_range + (n->new_neighbors)+(new_neighbors->n) 
 }
 
-//Move a node  (Always equals)
-pred move{
+//Move a node - (changes depending on Node and neibours of this node)
+pred move[n:Node, new_neighbors:set Node]{
+	in_range'=in_range - ( n->Node )-(Node->n) + (n->new_neighbors)+(new_neighbors->n) 
+	
 	inbox'= inbox
 	role'=role
 	partition_id'=partition_id	
 	leader'=leader
 	Node'=Node
 }
-//Move a node - (changes depending on Node and neibours of this node)
-pred move[n:Node, new_neighbors:set Node]{
-	move
-	in_range'=in_range - ( n->Node )-(Node->n) + (n->new_neighbors)+(new_neighbors->n) 
-	
-}
+
 
 //Changes the node role to Router
 pred change_to_router[n:FTD]{
@@ -381,15 +387,15 @@ pred change_to_router[n:FTD]{
 	leader'=leader
 }
 
+
 /*************************************
  *                 Simulation                 *
  *************************************/
-
 fact transitions{
 	always (Nop or 
 			(some n:Node |{
 				(send_ParentRequest[n] or send_ChildRequest[n] or
-				join_to_partition[n])
+				join_to_partition[n] or move[n,none])
 				
 			}) or 
 			(some  ftd:FTD|{			
@@ -399,23 +405,45 @@ fact transitions{
 				send_Advertisement[ftd] or merge_partitions[ftd] or change_to_router[ftd]
 			}) or 
 		         (some n1:FTD | some n2: FTD-n1 | send_LinkReq[n1,n2] or send_LinkResp[n1,n2]) or 
-			  (addNode) or (move)
+		         (some n1:Node | some ns: (Node -n1) | move[n1,ns] ) or 
+			  (addNode)
 		    )
 }
+
 run {
   some n1:FTD' { addNode[n1,none];
+    send_ParentRequest[n1] or send_Advertisement[n1];
+    send_ParentRequest[n1] or send_Advertisement[n1];
+    change_to_leader[n1];
+    send_ParentRequest[n1] or send_Advertisement[n1];
+    send_ParentRequest[n1] or send_Advertisement[n1];
     some n2:FTD'-n1 { addNode[n2,n1];
-      change_to_leader[n2];
-      send_ParentRequest[n1];
-      send_ParentResponse[n2];
-      send_ChildRequest[n1];
-      send_ChildResponse[n2];
-      join_to_partition[n1] 
-}}}  for 2 but 9..9 steps
+      send_ParentRequest[n2] or send_Advertisement[n2];
+      send_ParentResponse[n1] or send_ChildRequest[n1];
+      send_ParentRequest[n1] or send_Advertisement[n1];
+      move[n2,n1];
+      send_ParentResponse[n2] or send_ChildRequest[n2];
+      send_ChildResponse[n1];
+      join_to_partition[n2] or merge_partitions[n2];
+      move[n2,n1];
+      send_LinkReq[n2,n1] or send_LinkResp[n2,n1] or send_LinkAcceptReq[n2] or send_LinkAcceptResp[n2];
+      send_LinkReq[n1,n2] or send_LinkResp[n1,n2] or send_LinkAcceptReq[n1] or send_LinkAcceptResp[n1];
+      change_to_router[n2];
+      some n3:FTD'-(n2+n1) { addNode[n3,n2];
+        move[n3,n1+n2];
+        send_ParentRequest[n1] or send_Advertisement[n1];
+        send_ParentRequest[n2] or send_Advertisement[n2];
+        send_ParentRequest[n3] or send_Advertisement[n3];
+        send_ParentResponse[n1] or send_ChildRequest[n1];
+        send_ParentResponse[n2] or send_ChildRequest[n2];
+        send_ParentResponse[n1] or send_ChildRequest[n1];
+        send_ParentRequest[n1] or send_Advertisement[n1];
+        send_ParentResponse[n3] or send_ChildRequest[n3];
+        send_ChildResponse[n1];
+        join_to_partition[n3] or merge_partitions[n3] 
+}}}}  for 3 but exactly 1 Partition, 31..31 steps
 
 /*
-	//Some examples from OTNS parser 
-	
 	//Cenário 1
 
 run {
@@ -1072,6 +1100,7 @@ run {
         join_to_partition[n3] or merge_partitions[n3] 
 }}}}  for 3 but exactly 1 Partition, 30..30 steps
 
+
 */
 
 /*************************************
@@ -1144,21 +1173,20 @@ pred fairness {
 /*************************************
  *      Proprieties to be checked       *
  *************************************/
-/*check lonePartition {
+check lonePartition {
 	always all n:Node | lone n.partition_id
-}for   3 but  exactly  3 Partition,0 int, 15 steps
-
-check  greedyLeader{
-	always all p:Partition | lone p.leader  -- once  one n.partition_id => always some   n.partition_id
-
 }for   3 but  exactly  3 Partition, 0 int, 9 steps
 
+check  greedyLeader{
+	always all p:Partition | lone p.leader 
+
+}for   3 but  exactly  3 Partition, 0 int, 9 steps
 
 -- Liveness
 check convergeToOnePartition{
  	fairness  and some FTD and  (all n:Node | (Node-n) in n.^in_range  and eventually always not reset[n]) =>  eventually  always (some p:Partition | Node in p.elems)  
-}for   2 but  exactly  2 Partition,  0 int, 9 steps
-*/
+}for   3 but exactly  3 Partition, 0 int, 9 steps
+
 
 /*
 check  FTDisAlwaysREEDafteraAddOperation{
